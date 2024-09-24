@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    background-image: url('https://codd.cs.gsu.edu/~abright10/images/darkb.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+#intro img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.zebra {
+    background-color: #f2f2f2;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+span.special {
+    color: red;
+    font-weight: bold;
+}
+
+
+.sidebar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sidebar td {
+    padding: 5px;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+#quote {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
